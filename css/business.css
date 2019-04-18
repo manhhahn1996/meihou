@@ -1,0 +1,88 @@
+body {
+    /* Set "my-sec-counter" to 0 */
+    counter-reset: my-sec-counter;
+}
+.business-page{
+    background: url(../images/business@2x.jpg) right no-repeat;
+    background-size: cover;
+    text-align: right;
+    padding: 134px;
+}
+.business-page-1{
+    background: url(../images/vision-background.png) center top 200px;
+    background-size: 100% auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.business-page-1 h2{
+    background-color: #FFF100;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 900;
+    position: relative;
+    font-size: 30px;
+    margin: 100px 0;
+}
+.business-page-1 h2:after{
+    display: block;
+    content: '';
+    width: 120px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-90%,50%);
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align:left;
+    padding-bottom: 100px;
+}
+.blocl img{
+    max-width: 100%;
+}
+.text-block{
+    width: 43%;
+}
+.header-block{
+    font-size: 26px;
+    position: relative;
+    z-index: 1;
+}
+.header-block p{
+    margin-top: 75px;
+    margin-left: 35px;
+    font-weight: bolder;
+}
+.header-block::before{
+    counter-increment: my-sec-counter;
+    content: '0' counter(my-sec-counter);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    color: #333;
+    line-height: 1;
+    font-size: 5rem;
+    font-family: "DIN Condensed Bold",sans-serif;
+    z-index: 0;
+}
+.header-block::after{
+    content: '';
+    width: 73px;
+    height: 115px;
+    position: absolute;
+    background-color: #fff100;
+    bottom: -15px;
+    left: 17px;
+    z-index: -1;
+}
+.content-block{
+    margin-top: 50px;
+}
+hr{
+    margin-bottom: 100px;
+    border: solid .5px #DEDEDE;
+}

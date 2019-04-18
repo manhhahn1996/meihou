@@ -1,0 +1,229 @@
+/***banner slideshow***/
+.banner{
+    overflow: hidden;
+}
+#lineheart{
+    width: 100%;
+}
+.banner-text{
+    position: relative;
+    max-width: 100%;
+}
+.banner-slideshow{
+    display: none;
+}
+.banner-slideshow img:last-child{
+    display: none;
+}
+.banner-slideshow img{
+    width: 100%;
+    height: 100%;
+    transition: 5s;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+/* .zoom{
+    animation-name: zoom;
+    animation-duration: 5s;
+} */
+@-webkit-keyframes fade {
+    from {
+        opacity: .3;
+        transform: scale(1);
+    } 
+    to {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .3;
+        transform: scale(1);
+    } 
+    to {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+/* @keyframes zoom{
+    from{transform: scale(1);}
+    to{transform: scale(1.1);}
+} */
+.text{
+    width: 100%;
+    position: absolute;
+    top: 65%;
+    transform: translate(0%,-50%);
+    text-align: center;
+    color:#fff; 
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text h1{
+    font-family:'southpawregular' ;
+    font-size: 5.20833vw;
+    font-weight: normal;
+}
+.text p{
+    font-size: 1.25vw;
+}
+.text img:first-of-type{
+    width: 100%;
+}
+.text img:last-of-type{
+    width: 0.67708vw;
+    animation: move-down 2s infinite;
+    cursor: pointer;
+}
+@keyframes move-down{
+    0% {
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+    20% {
+        -webkit-transform: translate(0,5px);
+        transform: translate(0,5px);/*.52083vw*/
+    }
+    40% {
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+}
+.text span{
+    font-size: .825vw;;
+    margin-top: .5625vw;
+    cursor: pointer;
+}
+.text i{
+    font-size: 24px;
+}
+
+
+/***section***/
+.section-header{
+    padding-top: 55px;
+    margin-bottom: 30px;
+}
+.about{
+    background-image:url(../images/about@2x.jpg);
+    text-align: right;
+}
+.vision{
+    background-image: url(../images/vision@2x.jpg);
+    text-align: left;
+}
+.business{
+    background-image:url(../images/business@2x.jpg);
+    text-align: right;
+}
+.interview{
+    background-image: url(../images/interview@2x.jpg);
+    text-align: left;
+}
+.recruit{
+    color: #333333;
+    background-image: url(../images/recruit@2x.jpg);
+}
+.recruit-img{
+    overflow: hidden;
+    position: relative;
+}
+.recruit-img:hover img{
+    transform: scale(1.1)
+}
+.recruit-img:hover .img-opacity{
+    opacity: .5;
+}
+
+.recruit-content img{
+    width: 100%;
+    transition: .3s;
+}
+
+.img-opacity{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.recruit .section-header{
+    text-align: right;
+}
+.recruit .section-header h2{
+    color: #333333;
+}
+.recruit-text .container{
+    display: flex;
+    justify-content: space-between;
+}
+.recruit-content{
+    width: 47%;
+}
+.recruit-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px 0;
+    font-size: 16px;
+}
+.recruit-header span{
+    background: #333333;
+    color: #fff;
+    padding: 9px 26px;
+    margin-right: 20px;
+}
+.recruit-header h3{
+    font-size: 2.2rem;
+}
+
+/***section transition***/
+.section{
+    position: relative;
+    overflow: hidden;
+}
+.odd::after,.even::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 9997;
+    transition: 1s linear
+}
+
+.odd-show::after{
+    left: 100%;
+}
+.even-show::after{
+    left: -100%;
+}
+.odd::before,.even::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ebebeb;
+    z-index: 9998;
+    transition: .5s linear
+}
+.odd-show::before{
+    left: 100%;
+}
+.even-show::before{
+    left: -100%;
+}

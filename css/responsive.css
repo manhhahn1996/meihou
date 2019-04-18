@@ -1,0 +1,222 @@
+@media screen and (max-width:768px){
+    .container{
+        max-width: 90%;
+    }
+    /***Header***/
+    #headerpage{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .logo img{
+        display: none;
+    }
+    img.small-logo{
+        display: inline-block;
+    }
+    #menu{
+        /* display:none; */
+        position: absolute;
+        width: 100%;
+        background: #323232;
+        top: 59px;
+        left: -100%;
+        transition: 1s;
+    }
+    #menu li{
+        padding: 15px;
+        border-bottom: 2px solid #fff;
+    }
+    #menu li:last-child{
+        background: #333333;
+    }
+    #menu a{
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+    /* .active a::after{
+        display: block;
+        content: '\f105';
+        font-family: FontAwesome,sans-serif;
+        color: #fff;
+        position: absolute;
+        right: 20px;
+    } */
+    .active{
+        left: 0!important;
+    }
+    .active .li-responsive{
+        display: block;
+    }
+    .active li:last-child{
+        display: none;
+    }
+    #menu ul{
+        /* display: block; */
+        text-align: center;
+        flex-direction: column;
+        margin: 0 0
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .bar-click{
+        display: none;
+    }
+    /***banner***/
+    .banner-slideshow img:first-child{
+        display: none;
+    }
+    .banner-slideshow img:last-child{
+        display: block;
+    }
+    .text h1{
+        font-size: 9.20833vw;
+    }
+    .text p{
+        font-size: 4.8vw;
+    }
+    .text span{
+        font-size: 3.2vw;
+    }
+    .text img:last-of-type {
+        width: 4.67708vw;
+    }
+
+    /***section***/
+    .section-btn{
+        text-align: center;
+    }
+    .section-btn button{
+        width: 90%;
+        height: 10vh;
+    }
+    .recruit-text .container{
+        flex-direction: column;
+    }
+    .recruit-content{
+        width: 100%;
+        margin-bottom: 13.33333vw;
+    }
+    .about{
+        background-image:url(../images/about-res@2x.jpg);
+    }
+    .vision{
+        background-image: url(../images/vision-res@2x.jpg);
+    }
+    .business{
+        background-image:url(../images/business-res@2x.jpg);
+    }
+    .interview{
+        background-image: url(../images/interview-res@2x.jpg);
+    }
+    .contact{
+        background-image: url(../images/contact-res@2x.jpg);
+    }
+    .contact button{
+        width: 100%;
+    }
+    .contact-phone{
+        margin: 0;
+    }
+    .contact-phone p{
+        font-size: 2rem;
+    }
+    .contact-phone span{
+        font-size: 1rem;
+    }
+    .about-page-content .list dl{
+        width: 100%;
+    }
+    .text-block{
+        width: 100%;
+    }
+    .section h2 {
+        font-size: 30px;
+    }
+}
+    /***Smartphone****/
+@media screen and (max-width:1150px) /*and (min-width:374px)*/{
+    .container{
+        max-width: 90%;
+    }
+    /***Header***/
+    #headerpage{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .logo img{
+        display: none;
+    }
+    img.small-logo{
+        display: inline-block;
+    }
+    #menu{
+        /* display:none; */
+        position: absolute;
+        width: 100%;
+        background: #323232;
+        top: 59px;
+        left: -100%;
+        transition: 1s;
+    }
+    #menu li{
+        padding: 15px;
+        border-bottom: 2px solid #fff;
+    }
+    #menu li:last-child{
+        background: #333333;
+    }
+    #menu a{
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+    /* .active a::after{
+        display: block;
+        content: '\f105';
+        font-family: FontAwesome,sans-serif;
+        color: #fff;
+        position: absolute;
+        right: 20px;
+    } */
+    .active{
+        left: 0!important;
+    }
+    .active .li-responsive{
+        display: block;
+    }
+    .active li:last-child{
+        display: none;
+    }
+    #menu ul{
+        /* display: block; */
+        text-align: center;
+        flex-direction: column;
+        margin: 0 0
+    }
+    .menu-toggle,#menu li span{
+        display: block;
+    }
+    .bar-click{
+        display: none;
+    }
+
+
+    /***banner***/
+    /* .text p{
+        font-size: 4.8vw;
+    }
+    .text span{
+        font-size: 3.2vw;
+    }
+    .text img:last-of-type {
+        width: 4.67708vw;
+    } */
+}
+/***Tablet, Ipad***/
+@media screen and (min-width:601px) and ( max-width:1079px){
+
+}
