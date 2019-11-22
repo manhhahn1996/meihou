@@ -1113,7 +1113,7 @@ parsePositiveInt = function (value, defaultValue) {
 
 
 /***my line heart here ***/
-var lhvivus = new Vivus('lineheart',{type:'oneByOne', duration: 200, file:'../images/main.svg'}, mycallback);
+var lhvivus = new Vivus('lineheart',{type:'oneByOne', duration: 200, file:'./images/main.svg'}, mycallback);
 function mycallback(){
     lhvivus
         .stop()
